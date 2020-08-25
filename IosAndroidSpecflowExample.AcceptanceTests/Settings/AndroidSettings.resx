@@ -118,10 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ApkPath" xml:space="preserve">
-    <value>/Users/raulrus/Desktop/com.xamarin.acquaintnative.apk</value>
+    <value>/Users/mraji/Desktop/com.xamarin.acquaintnative.apk</value>
+    <comment>Users\mraji\Desktop\com.xamarin.acquaintnative.apk</comment>
   </data>
   <data name="DeviceIdentifier" xml:space="preserve">
-    <value>Pixel_XL_API_28</value>
+    <value>PixelXLAPI28</value>
   </data>
   <data name="DevicePlatform" xml:space="preserve">
     <value>9</value>

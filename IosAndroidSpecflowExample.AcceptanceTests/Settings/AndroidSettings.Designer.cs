@@ -39,8 +39,7 @@ namespace IosAndroidSpecflowExample.Settings {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("IosAndroidSpecflowExample.Settings.Andr" +
-                            "oidSettings", typeof(AndroidSettings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("IosAndroidSpecflowExample.Settings.AndroidSettings", typeof(AndroidSettings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,7 +61,7 @@ namespace IosAndroidSpecflowExample.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /Users/raulrus/Desktop/com.xamarin.acquaintnative.apk.
+        ///   Looks up a localized string similar to /Users/mraji/Desktop/com.xamarin.acquaintnative.apk.
         /// </summary>
         public static string ApkPath {
             get {
@@ -71,7 +70,7 @@ namespace IosAndroidSpecflowExample.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pixel_XL_API_28.
+        ///   Looks up a localized string similar to PixelXLAPI28.
         /// </summary>
         public static string DeviceIdentifier {
             get {

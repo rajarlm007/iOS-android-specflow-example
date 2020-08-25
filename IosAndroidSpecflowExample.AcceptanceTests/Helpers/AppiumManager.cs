@@ -43,6 +43,10 @@ namespace IosAndroidSpecflowExample.Helpers
 
         public static void CreateDriver()
         {
+            //string filename = @"TestApps\com.xamarin.acquaintnative.apk";
+            string filename = @"Steps\app-qa-release123.apk";
+            string filePath = AppDomain.CurrentDomain.BaseDirectory + filename;
+
             var options = new AppiumOptions();
 
             options.AddAdditionalCapability(MobileCapabilityType.PlatformName, Settings.GlobalSettings.Platform);
@@ -70,9 +74,10 @@ namespace IosAndroidSpecflowExample.Helpers
             {
                 options.AddAdditionalCapability(MobileCapabilityType.PlatformVersion, Settings.AndroidSettings.DevicePlatform);
                 options.AddAdditionalCapability(MobileCapabilityType.DeviceName, Settings.AndroidSettings.DeviceIdentifier);
-                options.AddAdditionalCapability(MobileCapabilityType.App, Settings.AndroidSettings.ApkPath);
+                options.AddAdditionalCapability(MobileCapabilityType.App, filePath);
                 options.AddAdditionalCapability(MobileCapabilityType.AutomationName, "uiautomator2");
-                options.AddAdditionalCapability(AndroidMobileCapabilityType.AppWaitActivity, "*");
+                options.AddAdditionalCapability(AndroidMobileCapabilityType.AppPackage, "com.honeywell.fire.crsqa");
+                options.AddAdditionalCapability(AndroidMobileCapabilityType.AppActivity, "com.honeywell.fire.crs.LoginActivity2");
 
                 Driver = new AndroidDriver<AppiumWebElement>(AppiumServer.ServerUri, options, AppiumDriverStartupTimeout);
             }

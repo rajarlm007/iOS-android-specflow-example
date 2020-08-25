@@ -55,5 +55,13 @@ namespace IosAndroidSpecflowExample.Steps
             acquaintancePage.WaitUntilListIsNotEmpty();
             acquaintancePage.IsAcquaintanceWithNameDisplayed(formattedAcquaintanceName).Should().BeFalse();
         }
+
+        [StepDefinition(@"I login to fire application")]
+        public void GivenILoginToFireApplication()
+        {
+            var fireApp = new FireApp();
+            fireApp.LoginAppWithValiidCredentials();
+        }
+
     }
 }
